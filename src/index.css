@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background: #eee;
+    font-family: 'roboto';
 }
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color:#FFC107;
+}
+
+    .form-box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 480px;
+        margin: 30px auto 20px auto;
+        background: #fff;
+        padding: 15px;
+        border-radius: 7px;
+        box-shadow: 0 1px 5px rgb(138, 137, 137);
+        }
+
+
+    form input,
+    form textarea {
+        width: 100%;
+        border: none;
+        padding: 4px;
+        outline: none;
+        font-size: 1.2em;
+        font-family: inherit;
+        resize: none;
+    }
+    form.form-note button{
+        position: absolute;
+        bottom: -25px;
+        right: 18px;
+        background-color: #FFA000;
+        color: rgb(241, 223, 195);
+    }
+
+    form.expand-icon{
+        cursor: pointer;
+        align-self: flex-end;
+    }
+
+.note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+    }
+    .note h1 {
+        font-size: 1.1em;
+        margin-bottom: 6px;
+      }
+      .note p {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      
+      .note button {
+        position: relative;
+        background-color: transparent;
+        float: right;
+        margin-right: 10px;
+        color: #FFA000;
+        border: none;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        outline: none;
+      }
