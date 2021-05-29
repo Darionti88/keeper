@@ -30,6 +30,7 @@ function deleteNote(id){
     <React.Fragment>
     <Header 
     headerName='Keeper by Gugul'/>
+    <div className='note-container'>
     <CreateNote 
     rows='0'
     addNote={addNote}/>
@@ -45,6 +46,7 @@ function deleteNote(id){
     </Grow>
     )
     })}
+    </div>
     <Footer />
     </React.Fragment>
   );

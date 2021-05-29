@@ -7,9 +7,13 @@
 body{
     background: #eee;
     font-family: 'roboto';
+    min-height: 100vh;
+    width: 100vw;
 }
 
-
+.note-container{
+    min-height: 75vh;
+}
 
 form{
     display: flex;
@@ -21,7 +25,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100vw;
     height: 10vh;
@@ -41,7 +45,6 @@ footer{
         box-shadow: 0 1px 5px rgb(138, 137, 137);
         }
 
-
     form input,
     form textarea {
         width: 100%;
@@ -60,7 +63,7 @@ footer{
         color: rgb(241, 223, 195);
     }
 
-    form.expand-icon{
+    .expand-icon{
         cursor: pointer;
         align-self: flex-end;
     }
@@ -96,4 +99,10 @@ footer{
         height: 36px;
         cursor: pointer;
         outline: none;
+      }
+
+      @media only screen and (max-width: 600px){
+          .form-box{
+              width: 60%;
+          }
       }
